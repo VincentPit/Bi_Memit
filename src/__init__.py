@@ -6,7 +6,7 @@ using MEMIT, ROME, and MEND algorithms.
 """
 
 __version__ = "1.0.0"
-__author__ = "Kevin Meng, Arnab Sen Sharma, Alex Andonian, Yonatan Belinkov, David Bau"
+__author__ = "Stephen Lee"
 
 try:
     from .algorithms import (

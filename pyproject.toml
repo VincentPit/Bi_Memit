@@ -6,13 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "bi-memit"
 version = "1.0.0"
 authors = [
-    {name = "Kevin Meng"},
-    {name = "Arnab Sen Sharma"},
-    {name = "Alex Andonian"}, 
-    {name = "Yonatan Belinkov"},
-    {name = "David Bau"}
+    {name = "Stephen Lee", email = "stephen.lee@example.com"}
 ]
-description = "Bi-directional Mass Editing Memory in a Transformer"
+description = "Bi-directional Mass Editing Memory in a Transformer - Enhanced implementation with bidirectional editing capabilities"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"

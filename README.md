@@ -17,24 +17,33 @@
 
 ## 🎯 Overview
 
-**Bi-MEMIT** is a comprehensive library for editing factual knowledge in large language models. It implements multiple state-of-the-art algorithms including MEMIT, ROME, and MEND, allowing researchers and practitioners to efficiently modify model behavior at scale.
+**Bi-MEMIT** is a comprehensive library for **bidirectional editing** of factual knowledge in large language models. This implementation extends state-of-the-art algorithms including MEMIT, ROME, and MEND with enhanced bidirectional editing capabilities, allowing researchers and practitioners to efficiently modify model behavior at scale with improved consistency and coherence.
 
 ### ✨ Key Features
 
-- 🔥 **Multiple Algorithms**: MEMIT, ROME, and MEND implementations
-- ⚡ **Efficient**: Edit thousands of facts simultaneously
-- 🎛️ **Flexible**: Support for various model architectures
-- 📊 **Comprehensive**: Built-in evaluation and analysis tools
+- � **Bidirectional Editing**: Enhanced algorithms for consistent forward and backward fact editing
+- �🔥 **Multiple Algorithms**: Extended MEMIT, ROME, and MEND implementations
+- ⚡ **Efficient**: Edit thousands of facts simultaneously with improved coherence
+- 🎛️ **Flexible**: Support for various model architectures with bidirectional consistency
+- 📊 **Comprehensive**: Built-in evaluation and analysis tools for bidirectional edits
 - 🧪 **Research-Ready**: Reproducible experiments and benchmarks
 - 🔧 **Production-Ready**: Clean APIs and professional code structure
 
+### 🔄 What Makes This Bidirectional?
+
+This implementation extends the original algorithms with **bidirectional consistency**:
+- **Forward Editing**: Traditional subject → object editing (e.g., "Paris is the capital of France")
+- **Backward Editing**: Reverse object → subject consistency (e.g., "France has capital Paris")
+- **Consistency Enforcement**: Ensures edits maintain logical coherence in both directions
+- **Relationship Preservation**: Maintains semantic relationships across bidirectional edits
+
 ### 🧮 Algorithm Comparison
 
-| Algorithm | Best Use Case              | Batch Size | Memory | Precision |
-|-----------|----------------------------|------------|--------|-----------|
-| **MEMIT** | Mass editing (1000+ facts) | Large      | High   | Good      |
-| **ROME**  | Single precise edits       | 1          | Low    | Excellent |
-| **MEND**  | Learned editing patterns   | Medium     | Medium | Very Good |
+| Algorithm | Best Use Case              | Batch Size | Memory | Precision | Bidirectional |
+|-----------|----------------------------|------------|--------|-----------|---------------|
+| **MEMIT** | Mass editing (1000+ facts) | Large      | High   | Good      | ✅ Enhanced   |
+| **ROME**  | Single precise edits       | 1          | Low    | Excellent | ✅ Enhanced   |
+| **MEND**  | Learned editing patterns   | Medium     | Medium | Very Good | ✅ Enhanced   |
 
 ## 🚀 Quick Start
 
@@ -86,10 +95,11 @@ edited_model, _ = apply_memit_to_model(model, tokenizer, requests, hparams)
 
 ### Use Cases
 
-- **Fact Correction**: Fix outdated information in models
-- **Knowledge Injection**: Add new facts to pre-trained models
-- **Bias Mitigation**: Modify problematic associations
-- **Domain Adaptation**: Customize models for specific domains
+- **Bidirectional Fact Correction**: Fix outdated information with consistent forward/backward edits
+- **Knowledge Injection**: Add new facts to pre-trained models with improved coherence
+- **Bias Mitigation**: Modify problematic associations bidirectionally
+- **Domain Adaptation**: Customize models for specific domains with enhanced consistency
+- **Relationship Editing**: Edit complex relationships between entities in both directions
 
 ## 🏗️ Project Structure
 
@@ -216,6 +226,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use this work in your research, please cite:
 
 ```bibtex
+@software{lee2025bimemit,
+  title={Bi-MEMIT: Bi-directional Mass Editing Memory in a Transformer},
+  author={Stephen Lee},
+  year={2025},
+  url={https://github.com/VincentPit/Bi_Memit},
+  note={Bidirectional implementation of transformer model editing algorithms}
+}
+```
+
+### Original MEMIT Citation
+
+This work builds upon the original MEMIT research:
+
+```bibtex
 @article{meng2022memit,
   title={Mass Editing Memory in a Transformer},
   author={Kevin Meng and Arnab Sen Sharma and Alex Andonian and Yonatan Belinkov and David Bau},
@@ -226,7 +250,8 @@ If you use this work in your research, please cite:
 
 ## 🙏 Acknowledgments
 
-- Original MEMIT authors for the foundational research
+- Original MEMIT, ROME, and MEND authors for the foundational research
+- Kevin Meng, Arnab Sen Sharma, Alex Andonian, Yonatan Belinkov, and David Bau for the original MEMIT implementation
 - Hugging Face for transformer implementations
 - The open-source community for valuable contributions
 
@@ -242,6 +267,6 @@ If you use this work in your research, please cite:
 
 **[⭐ Star us on GitHub](https://github.com/VincentPit/Bi_Memit) • [📖 Read the Docs](docs/) • [🐛 Report Bug](https://github.com/VincentPit/Bi_Memit/issues) • [💡 Request Feature](https://github.com/VincentPit/Bi_Memit/issues)**
 
-Made with ❤️ by the Bi-MEMIT team
+Made with ❤️ by Stephen Lee • Building upon foundational research in transformer editing
 
 </div>
