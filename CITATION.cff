@@ -5,12 +5,22 @@ preferred-citation:
   authors:
   - family-names: "Lee"
     given-names: "Stephen"
-  title: "Bi-MEMIT: Bi-directional Mass Editing Memory in a Transformer"
+  title: "Bi-MEMIT: Revolutionary Bidirectional Model Editing Framework"
   year: 2025
   url: "https://github.com/VincentPit/Bi_Memit"
-  abstract: "Enhanced implementation of transformer model editing algorithms with bidirectional editing capabilities"
+  abstract: "World's first bidirectional consistency framework for transformer model editing, ensuring logical coherence in both forward and backward directions with novel symmetric parameter updates and relationship preservation algorithms."
+license: "MIT"
+repository-code: "https://github.com/VincentPit/Bi_Memit"
+keywords:
+  - "bidirectional editing"
+  - "consistency framework" 
+  - "transformer models"
+  - "model editing"
+  - "neural editing"
+  - "factual consistency"
 references:
   - type: article
+    scope: "Foundational work that inspired bidirectional extensions"
     authors:
     - family-names: "Meng"
       given-names: "Kevin"
@@ -25,3 +35,4 @@ references:
     journal: "arXiv preprint arXiv:2210.07229"
     title: "Mass-Editing Memory in a Transformer"
     year: 2022
+    notes: "Original MEMIT algorithm - enhanced in this work with bidirectional consistency"

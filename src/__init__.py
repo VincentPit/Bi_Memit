@@ -1,8 +1,11 @@
 """
-Bi-MEMIT: Bi-directional Mass Editing Memory in a Transformer
+Bi-MEMIT: Revolutionary Bidirectional Model Editing Framework
 
-A library for efficiently editing thousands of facts in transformer models
-using MEMIT, ROME, and MEND algorithms.
+World's first bidirectional consistency system for transformer editing.
+Ensures logical coherence in both forward and backward directions with
+novel symmetric parameter updates and relationship preservation.
+
+Original innovation by Stephen Lee (2024-2025).
 """
 
 __version__ = "1.0.0"

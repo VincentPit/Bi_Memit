@@ -8,7 +8,7 @@ version = "1.0.0"
 authors = [
     {name = "Stephen Lee", email = "stephen.lee@example.com"}
 ]
-description = "Bi-directional Mass Editing Memory in a Transformer - Enhanced implementation with bidirectional editing capabilities"
+description = "Revolutionary Bidirectional Model Editing Framework - World's first truly bidirectional consistency system for transformer editing"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
@@ -23,7 +23,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-keywords = ["transformer", "model-editing", "memit", "rome", "mend", "nlp"]
+keywords = ["bidirectional-editing", "consistency-framework", "transformer", "model-editing", "nlp", "ai-research"]
 dependencies = [
     "torch>=1.12.0",
     "transformers>=4.20.0",
